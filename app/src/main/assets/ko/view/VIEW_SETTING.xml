@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Document Type="DOCFILE">
+    <SECTION TITLE="">
+        <CELL TITLE="로 그 아 웃" ID="LOGOUT" TYPE="BUTTON" />
+    </SECTION>
+    <SECTION TITLE="Option">
+        <CELL TITLE="셀룰러 사용" ID="OPTION_CELLULAR" TYPE="SWITCH" DATA="0" />
+    </SECTION>
+    <SECTION TITLE="보안 설정">
+        <CELL TITLE="암호 설정" ID="OPTION_PASSWORD" TYPE="SWITCH" DATA="0" />
+        <CELL TITLE="암호 변경" ID="PASSCHANGE" TYPE="BUTTON" />
+    </SECTION>
+    <SECTION TITLE="MISC">
+        <CELL TITLE="캐쉬 비우기" ID="CACHE" TYPE="BUTTON" />
+    </SECTION>
+    <SECTION TITLE="ABOUT">
+        <CELL TITLE="Version" ID="VERSION" TYPE="LABEL" DATA="1.0" />
+        <CELL TITLE="Developer" ID="DEV" TYPE="LABEL" DATA="(주)우남소프트" />
+        <CELL TITLE="Bug Report" ID="BUG" TYPE="BUTTON" />
+    </SECTION>
+</Document>

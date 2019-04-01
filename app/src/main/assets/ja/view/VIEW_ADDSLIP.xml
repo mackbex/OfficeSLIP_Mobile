@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Document Type="DOCFILE">
+    <COMMON>
+        <SECTION TITLE="文書情報">
+            <CELL TITLE="部署" ID="PART_NO" TYPE="LABEL" PLACEHOLDER="" />
+            <CELL TITLE="ID" ID="REG_USER" TYPE="LABEL" PLACEHOLDER="" />
+            <CELL TITLE="証憑タイプ" ID="SDOC_TYPE" TYPE="SELECT" PLACEHOLDER="- 選択 -" />
+            <CELL TITLE="証憑名" ID="SDOC_NAME" TYPE="TEXT" PLACEHOLDER="証憑名を入力してください。" />
+        </SECTION>
+        <SECTION TITLE="証憑">
+            <CELL TITLE="" ID="" TYPE="SLIP" />
+        </SECTION>
+    </COMMON>
+</Document>

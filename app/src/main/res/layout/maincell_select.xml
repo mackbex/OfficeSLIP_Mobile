@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:maxHeight="50dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:background="@drawable/bg_cell"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/view_textCellTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorUICellTitle"
+        />
+    <TextView
+        android:id="@+id/view_textCellContents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/view_imageCellContents"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorUICellTitle"
+        android:layout_marginEnd="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/view_imageCellContents"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+</android.support.constraint.ConstraintLayout>

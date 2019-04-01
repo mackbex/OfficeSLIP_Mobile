@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Document Type="DOCFILE">
+    <COMMON>
+        <SECTION TITLE="Document">
+            <CELL TITLE="Part" ID="PART_NO" TYPE="LABEL" PLACEHOLDER="" />
+            <CELL TITLE="ID" ID="REG_USER" TYPE="LABEL" PLACEHOLDER="" />
+            <CELL TITLE="Type" ID="SDOC_TYPE" TYPE="SELECT" PLACEHOLDER="- Select -" />
+            <CELL TITLE="Evidence name" ID="SDOC_NAME" TYPE="TEXT" PLACEHOLDER="Please enter name" />
+        </SECTION>
+        <SECTION TITLE="Slip">
+            <CELL TITLE="" ID="" TYPE="SLIP" />
+        </SECTION>
+    </COMMON>
+</Document>

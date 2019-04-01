@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="MAIN_VOUCHER"
+    android:background="@color/colorViewBackground">
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/view_layoutUICell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2"
+            app:orientation="horizontal"
+            android:padding="4dp"
+            >
+
+
+      <!--   <Button
+                android:layout_width="match_parent"
+                />
+            <Button
+                android:layout_width="40dp"
+                />
+            <Button
+                android:layout_width="10dp"
+                />-->
+
+
+        </android.support.v7.widget.GridLayout>
+        <!--<android.support.constraint.ConstraintLayout-->
+            <!--android:id="@+id/view_layoutUICell"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp"-->
+
+            <!--&gt;-->
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:layout_constraintWidth_percent="0.1"-->
+                <!--app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                 <!--/>-->
+
+        <!--</android.support.constraint.ConstraintLayout>-->
+        <!--<LinearLayout
+            android:id="@+id/view_layoutUICell"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/fragment_padding"
+            android:orientation="vertical">
+
+        </LinearLayout>-->
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

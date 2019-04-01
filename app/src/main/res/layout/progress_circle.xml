@@ -1,0 +1,34 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="match_parent">
+
+
+      <TextView
+        android:id="@+id/view_textProgressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:text="@string/in_progress"
+        android:textColor="@color/colorDefaultText"
+          app:layout_constraintBottom_toBottomOf="@id/view_progress"
+        app:layout_constraintLeft_toRightOf="@id/view_progress"
+        app:layout_constraintTop_toTopOf="@id/view_progress"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+       />
+
+
+    <ProgressBar
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:padding="10dp"
+        android:progress="0"/>
+
+</android.support.constraint.ConstraintLayout>

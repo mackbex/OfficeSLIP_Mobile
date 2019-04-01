@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sgenc.officeslip"
+    >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.officeslip.Application.OfficeSLIP"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:grantUriPermissions="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.officeslip.View.Splash.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.officeslip.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.officeslip.MainActivity" />
+        <activity android:name="com.officeslip.PINActivity" />
+        <activity android:name="com.officeslip.SDocTypeActivity" />
+        <activity android:name="com.officeslip.SearchOptionActivity" />
+        <activity android:name="com.officeslip.ThumbActivity" />
+        <activity android:name="com.officeslip.OriginalViewAcitivty" />
+        <activity android:name="com.officeslip.SelectUserActivity" />
+        <activity android:name="com.officeslip.View.EditSlip.DrawSettingActivity" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.officeslip.View.EditSlip.EditSlipActivity" android:configChanges="orientation|screenSize" />
+        <activity android:name="com.officeslip.View.FileExplorer.FileExplorerActivity" />
+
+        <activity android:name="com.officeslip.CameraActivity"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:name="com.officeslip.Util.GenericFileProvider"
+            android:authorities="${applicationId}.Util.GenericFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!-- ressource file to create -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths">
+            </meta-data>
+        </provider>
+
+    </application>
+
+
+</manifest>

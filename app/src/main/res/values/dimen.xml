@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+    <dimen name="sliplist_top_row_1">10dp</dimen>
+    <dimen name="sliplist_left_row_1">50dp</dimen>
+    <dimen name="sliplist_left_row_2">210dp</dimen>
+    <dimen name="edit_btn_margin">17dp</dimen>
+    <dimen name="navigation_header_height">160dp</dimen>
+    <dimen name="navigation_width">300dp</dimen>
+
+    <!-- Overriding sizes of the FAB -->
+    <dimen name="design_fab_size_normal">40dp</dimen>
+    <dimen name="design_fab_size_mini">36dp</dimen>
+
+    <!-- Slip thumbnail margins -->
+    <dimen name="search_thumb_layout_margin">4dp</dimen>
+    <dimen name="search_thumb_cardview_margin">2dp</dimen>
+
+    <!-- Tile menu padding -->
+    <dimen name="tile_menu_padding">2dp</dimen>
+
+</resources>

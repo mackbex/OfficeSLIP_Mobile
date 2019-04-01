@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    <style name="ThumbZoomButton">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <!--splash theme start-->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_splash</item>
+    </style>
+    <!--splash theme end-->
+</resources>

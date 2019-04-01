@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="DRAW_SETTING"
+    android:background="@color/colorViewBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/view_toolbarDrawSetting"
+        popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="#ffffff"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="60dp"
+                android:layout_height="?attr/actionBarSize"
+                app:mrl_rippleColor="@color/white"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleDimension="14dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:mrl_rippleDelayClick="false"
+                >
+                <ImageView
+                    android:id="@+id/view_btnClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_close"
+                    android:padding="16dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:tag="PROPERTY_CLOSE"
+                    />
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorActionBtnDefault"
+                android:text="@string/setting"/>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="60dp"
+                android:layout_height="?attr/actionBarSize"
+                app:mrl_rippleColor="@color/white"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleDimension="14dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:mrl_rippleDelayClick="false"
+                >
+                <ImageButton
+                    android:id="@+id/view_btnCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_check"
+                    android:padding="12dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/colorActionBtnDefault"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:tag="PROPERTY_CONFIRM"
+                    />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/view_toolbarDrawSetting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/view_layoutUICell"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/fragment_padding"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<ScrollView-->
+    <!--app:layout_constraintTop_toBottomOf="@id/view_toolbarAddSlip"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp">-->
+    <!--<LinearLayout-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--android:id="@+id/view_layoutUICell"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom="@dimen/fragment_padding"-->
+    <!--android:orientation="vertical">-->
+
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</android.support.constraint.ConstraintLayout>

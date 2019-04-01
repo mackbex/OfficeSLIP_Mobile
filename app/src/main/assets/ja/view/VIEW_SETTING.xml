@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Document Type="DOCFILE">
+    <SECTION TITLE="">
+        <CELL TITLE="ログアウト" ID="LOGOUT" TYPE="BUTTON" />
+    </SECTION>
+    <SECTION TITLE="Option">
+        <CELL TITLE="3G/ LTEを使用" ID="OPTION_CELLULAR" TYPE="SWITCH" DATA="0" />
+    </SECTION>
+    <SECTION TITLE="セキュリティ設定">
+        <CELL TITLE="パスワード設定" ID="OPTION_PASSWORD" TYPE="SWITCH" DATA="0" />
+        <CELL TITLE="パスワード変更" ID="PASSCHANGE" TYPE="BUTTON" />
+    </SECTION>
+    <SECTION TITLE="MISC">
+        <CELL TITLE="キャッシュ削除" ID="CACHE" TYPE="BUTTON" />
+    </SECTION>
+    <SECTION TITLE="ABOUT">
+        <CELL TITLE="Version" ID="VERSION" TYPE="LABEL" DATA="1.0" />
+        <CELL TITLE="Developer" ID="DEV" TYPE="LABEL" DATA="Woonamsoft Co., Ltd." />
+        <CELL TITLE="Bug Report" ID="BUG" TYPE="BUTTON" />
+    </SECTION>
+</Document>

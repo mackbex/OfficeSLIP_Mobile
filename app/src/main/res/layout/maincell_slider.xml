@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    android:maxHeight="60dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:background="@drawable/bg_cell"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/view_textCellTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorUICellTitle"
+android:text=""
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="5dp"
+
+        >
+        <TextView
+            android:id="@+id/view_textCellMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"
+            />
+        <TextView
+            android:id="@+id/view_textCellCur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+        <TextView
+            android:id="@+id/view_textCellMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="8dp"
+            />
+
+        <SeekBar
+            android:id="@+id/view_sbContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

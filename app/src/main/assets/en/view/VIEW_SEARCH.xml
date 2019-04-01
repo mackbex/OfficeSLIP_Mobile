@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Document Type="DOCFILE">
+    <COMMON>
+        <SECTION TITLE="Information" LOAD="1">
+            <CELL TITLE="Used" ID="USED" TYPE="SEG" DATA="All;Unused;Used" ENABLE="1" />
+            <CELL TITLE="Evidence name" ID="SDOC_NAME" TYPE="TEXT" PLACEHOLDER="Please enter name" ENABLE="1" />
+            <CELL TITLE="Evidence type" ID="SDOC_TYPE" TYPE="SELECT" PLACEHOLDER="- All -" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="Reg date">
+            <CELL TITLE="From" ID="CABINET_START" TYPE="SELECT" PLACEHOLDER="@DATE,-30" ENABLE="1" />
+            <CELL TITLE="To" ID="CABINET_END" TYPE="SELECT" PLACEHOLDER="@TODAY" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="User">
+            <CELL TITLE="Corporate" ID="CO_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="Team" ID="PART_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="Name" ID="REG_USER" TYPE="LABEL" VALUE="" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="">
+            <CELL TITLE="Search" ID="SEARCH" TYPE="BUTTON" ENABLE="1" />
+        </SECTION>
+    </COMMON>
+    <STATE>
+        <SECTION TITLE="Period">
+            <CELL TITLE="Start date" ID="CABINET_START" TYPE="SELECT" PLACEHOLDER="@DATE,-30" ENABLE="1" />
+            <CELL TITLE="End date" ID="CABINET_END" TYPE="SELECT" PLACEHOLDER="@TODAY" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="User info">
+            <CELL TITLE="Crop" ID="CO_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="Part" ID="PART_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="User" ID="REG_USER" TYPE="LABEL" VALUE="" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="">
+            <CELL TITLE="Search" ID="SEARCH" TYPE="BUTTON" ENABLE="1" />
+        </SECTION>
+    </STATE>
+    <ADDFILE>
+        <SECTION TITLE="Information">
+            <CELL TITLE="Name" ID="ADD_FILE" TYPE="TEXT" PLACEHOLDER="Please enter file name" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="Reg date">
+            <CELL TITLE="From" ID="CABINET_START" TYPE="SELECT" PLACEHOLDER="@DATE,-30" ENABLE="1" />
+            <CELL TITLE="To" ID="CABINET_END" TYPE="SELECT" PLACEHOLDER="@TODAY" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="User">
+            <CELL TITLE="Corporate" ID="CO_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="Team" ID="PART_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="User" ID="REG_USER" TYPE="LABEL" VALUE="" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="">
+            <CELL TITLE="Search" ID="SEARCH" TYPE="BUTTON" ENABLE="1" />
+        </SECTION>
+    </ADDFILE>
+</Document>

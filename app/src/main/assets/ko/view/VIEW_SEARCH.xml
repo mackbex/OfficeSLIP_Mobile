@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Document Type="DOCFILE">
+    <COMMON>
+        <SECTION TITLE="문서정보" LOAD="1">
+            <CELL TITLE="구분" ID="USED" TYPE="SEG" DATA="전체;미사용;사용;공용" ENABLE="1" />
+            <CELL TITLE="증빙 명" ID="SDOC_NAME" TYPE="TEXT" PLACEHOLDER="증빙명을를 입력하세요" ENABLE="1" />
+            <CELL TITLE="증빙 유형" ID="SDOC_TYPE" TYPE="SELECT" PLACEHOLDER="- 전체 -" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="조회기간">
+            <CELL TITLE="시작일자" ID="CABINET_START" TYPE="SELECT" PLACEHOLDER="@DATE,-30" ENABLE="1" />
+            <CELL TITLE="종료일자" ID="CABINET_END" TYPE="SELECT" PLACEHOLDER="@TODAY" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="사용자 정보">
+            <CELL TITLE="법인 정보" ID="CO_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="부서 정보" ID="PART_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="사용자" ID="REG_USER" TYPE="LABEL" VALUE="" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="">
+            <CELL TITLE="검 색" ID="SEARCH" TYPE="BUTTON" ENABLE="1" />
+        </SECTION>
+    </COMMON>
+    <STATE>
+        <SECTION TITLE="조회기간">
+            <CELL TITLE="시작일자" ID="CABINET_START" TYPE="SELECT" PLACEHOLDER="@DATE,-30" ENABLE="1" />
+            <CELL TITLE="종료일자" ID="CABINET_END" TYPE="SELECT" PLACEHOLDER="@TODAY" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="사용자 정보">
+            <CELL TITLE="법인 정보" ID="CO_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="부서 정보" ID="PART_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="사용자" ID="REG_USER" TYPE="LABEL" VALUE="" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="">
+            <CELL TITLE="검 색" ID="SEARCH" TYPE="BUTTON" ENABLE="1" />
+        </SECTION>
+    </STATE>
+    <ADDFILE>
+        <SECTION TITLE="조회기간">
+            <CELL TITLE="파일명" ID="ADD_FILE" TYPE="TEXT" PLACEHOLDER="파일명을 입력하세요" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="조회기간">
+            <CELL TITLE="시작일자" ID="CABINET_START" TYPE="SELECT" PLACEHOLDER="@DATE,-30" ENABLE="1" />
+            <CELL TITLE="종료일자" ID="CABINET_END" TYPE="SELECT" PLACEHOLDER="@TODAY" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="사용자 정보">
+            <CELL TITLE="법인 정보" ID="CO_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="부서 정보" ID="PART_NO" TYPE="LABEL" ENABLE="1" />
+            <CELL TITLE="사용자" ID="REG_USER" TYPE="LABEL" VALUE="" ENABLE="1" />
+        </SECTION>
+        <SECTION TITLE="">
+            <CELL TITLE="검 색" ID="SEARCH" TYPE="BUTTON" ENABLE="1" />
+        </SECTION>
+    </ADDFILE>
+</Document>

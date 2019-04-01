@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Document Type="DOCFILE">
+    <COMMON>
+        <SECTION TITLE="문서정보">
+            <CELL TITLE="부서" ID="PART_NO" TYPE="LABEL" PLACEHOLDER="" />
+            <CELL TITLE="ID" ID="REG_USER" TYPE="LABEL" PLACEHOLDER="" />
+            <CELL TITLE="증빙유형" ID="SDOC_TYPE" TYPE="SELECT" PLACEHOLDER="- 선택 -" />
+            <CELL TITLE="증빙 명" ID="SDOC_NAME" TYPE="TEXT" PLACEHOLDER="증빙명을 입력하세요." />
+        </SECTION>
+        <SECTION TITLE="증빙">
+            <CELL TITLE="" ID="" TYPE="SLIP" />
+        </SECTION>
+    </COMMON>
+</Document>

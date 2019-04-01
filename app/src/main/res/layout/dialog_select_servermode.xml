@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#F1F1F6"
+    android:minWidth="200dp"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:text="@string/title_select_server" />
+    <EditText
+        android:id="@+id/view_editPassword"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"
+        android:textColorHint="#999999"
+        android:textColor="#444444"
+        android:password="true"
+        android:hint="@string/input_pw" />
+    <RadioGroup
+        android:id="@+id/view_radioServer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <RadioButton
+            android:id="@+id/view_radioBtnPRD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:checked="true"
+            android:text="@string/select_prd" />
+
+        <RadioButton
+            android:id="@+id/view_radioBtnDEV"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#444444"
+
+            android:text="@string/select_dev" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/view_btnConfirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="@string/btn_confirm"
+            />
+        <Button
+            android:id="@+id/view_btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:text="@string/btn_cancel"
+            />
+    </LinearLayout>
+</LinearLayout>

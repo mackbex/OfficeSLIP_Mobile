@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item
+        android:id="@+id/action_addslip"
+        android:icon="@drawable/ic_tab_addslip"
+        android:title="@string/main_tab_add_slip"/>
+    <item
+        android:id="@+id/action_searchslip"
+        android:icon="@drawable/ic_tab_searchslip"
+        android:title="@string/main_tab_search_slip"/>
+    <item
+        android:id="@+id/action_addfile"
+        android:icon="@drawable/ic_tab_addfile"
+        android:title="@string/main_tab_search_addfile"/>
+    <item
+        android:id="@+id/action_statistics"
+        android:icon="@drawable/ic_tab_statistics"
+        android:title="@string/main_tab_slip_statistics"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_tab_setting"
+        android:title="@string/main_tab_setting"/>-->
+
+    <item
+        android:id="@+id/action_dashboard"
+        android:icon="@drawable/ic_tab_statistics"
+        android:title="@string/main_tab_dashboard"/>
+
+    <item
+        android:id="@+id/action_voucher"
+        android:icon="@drawable/ic_tab_addfile"
+        android:title="@string/main_tab_approval"/>
+    <item
+        android:id="@+id/acton_slip"
+        android:icon="@drawable/ic_tab_searchslip"
+        android:title="@string/main_tab_slip"/>
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_tab_setting"
+        android:title="@string/main_tab_setting"/>
+</menu>

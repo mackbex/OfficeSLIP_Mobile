@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/bg_cell"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_layoutOptions"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+    <TextView
+        android:id="@+id/view_textCellTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorUICellTitle"
+        />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintRight_toRightOf="parent">
+        <View
+            android:id="@+id/view_curColor"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toTopOf="@id/view_textCellContents"
+            app:layout_constraintBottom_toBottomOf="@id/view_textCellContents"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <TextView
+            android:id="@+id/view_textCellContents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginStart="10dp"
+            app:layout_constraintLeft_toRightOf="@id/view_curColor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/view_layoutColorPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/view_layoutOptions"
+
+
+        >
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

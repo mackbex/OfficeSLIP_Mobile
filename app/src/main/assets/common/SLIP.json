@@ -1,0 +1,30 @@
+[
+  {
+    "tag": "SLIP_MENU",
+    "title": "Home",
+    "icon":"home",
+    "submenu": [
+      {
+        "title" : "증빙 등록",
+        "tag" : "ADD_SLIP",
+        "span" : "2",
+        "icon" : "addslip",
+        "bg" : "1d4177"
+      },
+      {
+        "title" : "증빙 조회",
+        "tag" : "SEARCH_SLIP",
+        "span" : "2",
+        "icon" : "slip",
+        "bg" : "5592e2"
+      },
+      {
+        "title" : "첨부 조회",
+        "tag" : "SEARCH_ATTACH",
+        "span" : "2",
+        "icon" : "addfile",
+        "bg" : "67c1d1"
+      }
+    ]
+  }
+]

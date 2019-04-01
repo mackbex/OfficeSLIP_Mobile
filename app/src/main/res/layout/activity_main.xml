@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.officeslip.MainActivity">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/view_toolbar"
+            popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:titleTextColor="#ffffff"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:visibility="gone"
+            />
+
+
+        <com.officeslip.Subclass.SiwpeableViewPager
+            android:id="@+id/view_pagerMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/view_naviBottom"
+            app:layout_constraintTop_toBottomOf="@+id/view_toolbar"
+            />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/view_naviBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/main_bottom"
+            android:animateLayoutChanges="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+           />
+
+    <!--
+        <android.support.v4.app.FragmentTabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/view_toolbar"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#aaa"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@android:id/tabs"
+                    />
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@drawable/border_top"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.app.FragmentTabHost>-->
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/main_nav"
+        android:layout_width="@dimen/navigation_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/navigation_header"
+        android:background="@color/lightGrey"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/navigation_header_height">
+        <LinearLayout
+            android:id="@+id/view_naviItemArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/fragment_padding"
+            android:background="@color/lightGrey"
+            >
+
+
+            <!--<ListView-->
+            <!--android:id="@+id/lst_menu_items"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1" />-->
+        </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

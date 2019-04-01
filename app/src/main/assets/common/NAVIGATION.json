@@ -1,0 +1,141 @@
+[
+  {
+    "title" : "본사",
+    "tag" : "0",
+    "section" : "VOUCHER",
+    "node":"Home;0",
+    "icon":"home",
+    "submenu": [
+      {
+        "title": "경조금",
+        "tag": "00",
+        "icon":"ic_00"
+      },
+      {
+        "title": "출장비",
+        "tag": "01",
+        "icon":"ic_01"
+      },
+      {
+        "title": "통신비",
+        "tag": "02",
+        "icon":"ic_02"
+      },
+      {
+        "title": "여비교통비",
+        "tag": "03",
+        "icon":"ic_03"
+      },
+      {
+        "title": "복리후생비",
+        "tag": "04",
+        "icon":"ic_04"
+      },
+      {
+        "title": "기타",
+        "tag": "05",
+        "icon":"ic_05"
+      }
+    ]
+  },
+  {
+    "title": "현장 - 전도금 정산",
+    "tag": "10",
+    "section" : "VOUCHER",
+    "node":"Home;1;10",
+    "submenu": [
+      {
+          "title": "경조금",
+          "tag": "100",
+          "icon":"ic_00"
+      },
+      {
+        "title": "임차료",
+        "tag": "111",
+        "icon":"ic_06"
+      },
+      {
+        "title": "복리후생비",
+        "tag": "112",
+        "icon":"ic_04"
+      }
+    ]
+  },
+  {
+    "title": "현장 - 본사 현장배부",
+    "tag": "11",
+    "section" : "VOUCHER",
+    "node":"Home;1;11",
+    "submenu": [
+      {
+        "title": "경조금",
+        "tag": "100",
+        "icon":"ic_00"
+      },
+      {
+        "title": "임차료",
+        "tag": "111",
+        "icon":"ic_06"
+      },
+      {
+        "title": "복리후생비",
+        "tag": "112",
+        "icon":"ic_04"
+      }
+    ]
+  },
+  {
+    "title": "전자결재",
+    "tag": "2",
+    "section" : "VOUCHER",
+    "node":"Home;2",
+    "submenu": [
+      {
+        "title": "결재함",
+        "tag": "20",
+        "icon":"ic_07"
+      },
+      {
+        "title": "상신함",
+        "tag": "21",
+        "icon":"ic_08"
+      },
+      {
+        "title": "진행함",
+        "tag": "22",
+        "icon":"ic_09"
+      },
+      {
+        "title": "완료함",
+        "tag": "23",
+        "icon":"ic_10"
+      },
+      {
+        "title": "반려함",
+        "tag": "24",
+        "icon":"ic_11"
+      }
+    ]
+  },
+  {
+    "title" : "전자증빙",
+    "tag": "5",
+    "section" : "SLIP",
+    "node":"Slip;5",
+    "submenu": [
+      {
+        "title": "증빙등록",
+        "tag": "50",
+        "icon":"addslip"
+      },{
+        "title": "증빙조회",
+        "tag": "51",
+        "icon":"slip"
+      },{
+        "title": "첨부조회",
+        "tag": "52",
+        "icon":"addfile"
+      }
+    ]
+  }
+]
